@@ -1,4 +1,3 @@
-
 # MyApp 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0 and it lists the basic steps to install , build and deploy Angular app in Gitlab 
@@ -18,7 +17,16 @@ Check the version of Angular cli using the below command
 
 `ng --version`
 
-Initialise git repo 
+Note : I have used mac to install and build tha app and configurations might be different for Windows OS
+
+### Set up group and repo in gitlab 
+
+Please refer the documentation to set up a group and repo in gitlab
+
+https://docs.gitlab.com/ee/user/group/
+
+https://docs.gitlab.com/ee/user/project/#new-project
+
 
 ## Development server
 
@@ -116,11 +124,26 @@ This lists the branches that can be deployed apart from Master . For ex: I have 
     
 ### Screenshot for checking path of Angular app to access 
 
+Please make sure Angular app is given public visibility to be accessible by all . Otherwise the visibility will be decided based on the group in which 
+the project is associated and access need to be granted to view the app
 
+Path of Angular app is available under Settings section
+
+![](images/AccessAngularAppFromGitlab.png)
 
 
 ### Screenshot for viewing the Angular app
+
+Indicates the URL in which Angular app is accessible 
+
+![](images/ViewAngularApp.png)
+
     
+### Screenshot for the pipeline 
+
+Indicates the CI pipeline which is triggered for the commits in Angular app
+
+![](images/GitlabCIpipeline.png)
 
 
 
