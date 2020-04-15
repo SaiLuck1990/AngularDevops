@@ -1,0 +1,16 @@
+image: node:12.0
+pages:
+  cache:
+    paths:
+      - node_modules/
+  script:
+    - npm install -g @angular/cli@9.1.0
+    - npm install
+    - npm run buildProd
+   # - mv dist/my-app/* public/
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
+    - pages
